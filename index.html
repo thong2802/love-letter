@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tâm Thư</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(45deg, #f3e7e9, #d3d3e7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .box {
+      width: 300px;
+      height: 200px;
+      background-color: white;
+      border: 3px dashed #8a2be2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+      border-color: #ff6b6b;
+    }
+
+    .box-text {
+      color: #8a2be2;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .letter-container {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      overflow-y: auto;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .letter-content {
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.8;
+      text-align: justify;
+      position: relative;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: -40px;
+      right: 0;
+      background-color: #ff6b6b;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 600px) {
+      .box {
+        width: 250px;
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box" id="letterBox">
+    <span class="box-text">Nhấn để đọc tâm thư</span>
+  </div>
+
+  <div class="letter-container" id="letterContainer">
+    <button class="close-btn" id="closeBtn">Đóng</button>
+    <div class="letter-content">
+      <h2 style="text-align: center; color: #8a2be2;">Tâm Thư Gửi Vợ Yêu Dấu</h2>
+
+      <p>Vợ à, Anh biết thời gian vừa qua vợ đã làm việc rất vất vả. Việc quán xuyến quán hiện tại và chuẩn bị cho quán
+        khai trương khiến vợ phải làm việc gần như 16-17 tiếng mỗi ngày. Anh thấy thương vợ rất nhiều khi đêm về, dù mệt
+        nhoài, vợ vẫn phải lo lắng, suy nghĩ cho công việc. Là người yêu vợ, nhìn thấy vợ kiên cường như vậy, anh vừa tự
+        hào, vừa xót xa. Nhưng anh cũng cảm thấy có lỗi khi không thể san sẻ được gánh nặng ấy cùng vợ, bởi tính chất
+        công việc của vợ và anh khác nhau quá.</p>
+
+      <p>Chúng ta là người yêu, bên nhau không chỉ để chia sẻ niềm vui mà còn là chỗ dựa những lúc khó khăn. Anh hiểu
+        rằng thời điểm này, vợ đang bận rộn trăm công nghìn việc. Nhiều khi vợ phải chạy qua lại giữa bếp và quán, chẳng
+        còn nhiều thời gian cho bản thân, chứ đừng nói đến việc dành cho hai đứa mình. Anh cũng hiểu rằng những lúc mệt
+        mỏi, tâm trạng không tốt, đôi khi vợ có những lời nói vô tình. Anh không trách vợ đâu, vì anh biết lúc đó tâm
+        trí vợ quá áp lực. Thực lòng mà nói, đôi khi anh cũng bồng bột, khiến vợ buồn. Những điều đó, anh đều ghi nhận
+        và luôn muốn sửa đổi để tốt hơn.</p>
+
+      <p>Anh luôn muốn làm điều gì đó bất ngờ, thú vị để vợ có thể thư giãn, vui vẻ hơn sau những giờ làm việc mệt nhọc.
+        Nhưng thú thực, anh làm việc trong môi trường kỹ thuật, nên nhiều khi ý tưởng của anh cũng hơi "khô khan." Anh
+        mong vợ giúp anh ở khoản này nhé! Ví dụ, lúc mệt mỏi, vợ cần anh làm gì nhất? Hay có điều gì vợ muốn anh làm để
+        khiến vợ vui hơn? Vợ cứ nói ra, để anh có thể cố gắng trở thành điểm tựa tinh thần đúng nghĩa.</p>
+
+      <p>Anh biết tình yêu nào cũng sẽ có những giai đoạn thăng trầm. Thời điểm này là thử thách với chúng ta, nhưng anh
+        tin rằng với sự thấu hiểu và tình cảm dành cho nhau, chúng ta sẽ vượt qua tất cả. Những suy nghĩ tiêu cực, nếu
+        có, chỉ là thoáng qua thôi, phải không vợ?</p>
+
+      <p>Cuối cùng, điều anh muốn nhắn nhủ vợ là: sức khỏe vẫn luôn là quan trọng nhất! Anh thấy vợ ăn uống không điều
+        độ, lại hay thức khuya dậy sớm, anh rất lo. Anh biết công việc hiện tại có những áp lực riêng, nhưng anh chỉ
+        mong vợ chăm sóc bản thân tốt hơn một chút, được không?</p>
+
+      <p>Vợ cứ yên tâm làm việc, anh sẽ cố gắng trở thành chỗ dựa vững vàng nhất cho vợ. Nhưng điều này, anh cũng cần sự
+        đồng hành từ vợ nữa.</p>
+
+      <p style="text-align: right; color: #8a2be2; font-weight: bold;">Yêu vợ rất nhiều! <br>Anh</p>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const letterBox = document.getElementById('letterBox');
+      const letterContainer = document.getElementById('letterContainer');
+      const closeBtn = document.getElementById('closeBtn');
+
+      letterBox.addEventListener('click', () => {
+        letterContainer.style.display = 'block';
+      });
+
+      closeBtn.addEventListener('click', () => {
+        letterContainer.style.display = 'none';
+      });
+    });
+  </script>
+</body>
+
+</html>
